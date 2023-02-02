@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crud com JS</title>
+    <link type="text/css" rel="stylesheet" href="main.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="submeterForm()">
+                    <div>
+                        <label for="nomeComp">Nome Completo</label>
+                        <input type="text" name="nomeComp" id="nomeComp" >
+                    </div>
+                    <div>
+                        <label for="idade">Idade</label>
+                        <input type="text" name="idade" id="idade" >
+                    </div>
+                    <div>
+                        <label for="salario">Salário</label>
+                        <input type="text" name="salario" id="salario">
+                    </div>
+                    <div>
+                        <label for="cidade">Cidade</label>
+                        <input type="text" name="cidade" id="cidade">
+                    </div>
+                    <div class="form_action--button">
+                        <input type="submit" value="Salvar">
+                        <input type="reset" value="Apagar">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="listaEmpregados">
+                    <thead>
+                        <tr>
+                            <th>Nome Completo</th>
+                            <th>idade</th>
+                            <th>Salário</th>
+                            <th>Cidade</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="main.js"></script>
+</body>
+</html>
